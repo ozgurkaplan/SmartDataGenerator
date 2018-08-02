@@ -31,7 +31,8 @@ namespace SmartDataGenerator.Generators
             {
                 _settings.Add(propertyInfo.Name, new Settings()
                 {
-                    DataType = DataTypes.None
+                    DataType = DataTypes.None,
+                    Generator = new DefaultGenerator(propertyInfo.GetType())
                 });
             }
         }
@@ -44,10 +45,8 @@ namespace SmartDataGenerator.Generators
                 throw new ArgumentException();
             }
             var propertyInfo = (PropertyInfo)body.Member;
-
             var propertyType = propertyInfo.PropertyType;
             var propertyName = propertyInfo.Name;
-
 
             var setting = new Settings()
             {
@@ -61,6 +60,28 @@ namespace SmartDataGenerator.Generators
             }
 
             setting.Generator = _generators[setting.DataType];
+
+            return this;
+        }
+
+        public SmartDataGenerator<T> Set<U>(Expression<Func<T, U>> expression, U[]  data)
+        {
+            MemberExpression body = expression.Body as MemberExpression;
+            if (body == null)
+            {
+                throw new ArgumentException();
+            }
+            var propertyInfo = (PropertyInfo)body.Member;
+            var propertyType = propertyInfo.PropertyType;
+            var propertyName = propertyInfo.Name;
+
+            var setting = new Settings()
+            {
+                DataType = DataTypes.None,
+            };
+            _settings[propertyName] = setting;
+
+            setting.Generator = new CustomDataGenerator<U>(data);
 
             return this;
         }
