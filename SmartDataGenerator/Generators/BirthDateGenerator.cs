@@ -2,7 +2,7 @@
 
 namespace SmartDataGenerator.Generators
 {
-    public class BirthDateGenerator : IGenerator
+    internal class BirthDateGenerator : IGenerator
     {
         private Random _random;
         private DateTime _start;

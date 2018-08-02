@@ -6,6 +6,7 @@
         FirstName,
         LastName,
         BirthDate,
-        Country
+        Country,
+        Company
     }
 }

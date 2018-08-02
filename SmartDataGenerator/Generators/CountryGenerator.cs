@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace SmartDataGenerator.Generators
 {
-    public class CountryGenerator : BaseDataGenerator
+    internal class CountryGenerator : BaseDataGenerator
     {
-        public CountryGenerator():base("Data/Countries.txt")
+        public CountryGenerator():base("Data/Country.txt")
         {
 
         }

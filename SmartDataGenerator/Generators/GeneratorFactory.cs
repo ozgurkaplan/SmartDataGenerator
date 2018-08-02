@@ -16,6 +16,8 @@ namespace SmartDataGenerator.Generators
                     return new BirthDateGenerator();
                 case DataTypes.Country:
                     return new CountryGenerator();
+                case DataTypes.Company:
+                    return new CompanyGenerator();
                 default:
                     throw new ArgumentException();
             }

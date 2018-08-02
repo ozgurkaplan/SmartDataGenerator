@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace SmartDataGenerator.Generators
 {
-    public class LastNameGenerator : BaseDataGenerator
+    internal class LastNameGenerator : BaseDataGenerator
     {
         public LastNameGenerator() : base("Data/LastName.txt")
         {

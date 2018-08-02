@@ -14,7 +14,8 @@ namespace SmartDataGenerator.Tests
                 .Set(f => f.FirstName, DataTypes.FirstName)
                 .Set(f => f.LastName, DataTypes.LastName)
                 .Set(f => f.BirthDate, DataTypes.BirthDate)
-                .Set(f => f.Country, DataTypes.Country);
+                .Set(f => f.Country, DataTypes.Country)
+                .Set(f => f.Company, DataTypes.Company);
             var response = generator.Generate();
         }
     }
@@ -25,5 +26,6 @@ namespace SmartDataGenerator.Tests
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public string Country { get; set; }
+        public string Company { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.IO;
 
 namespace SmartDataGenerator.Generators
 {
-    public abstract class BaseDataGenerator: IGenerator
+    internal abstract class BaseDataGenerator: IGenerator
     {
         private string[] _data;
         private readonly Random rng;

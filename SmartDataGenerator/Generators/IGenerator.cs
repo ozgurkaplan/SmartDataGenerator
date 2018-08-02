@@ -1,6 +1,6 @@
 ﻿namespace SmartDataGenerator.Generators
 {
-    public interface IGenerator
+    internal interface IGenerator
     {
         object Generate();
     }

@@ -31,7 +31,6 @@ namespace SmartDataGenerator.Generators
             {
                 _settings.Add(propertyInfo.Name, new Settings()
                 {
-                    GenerationStrategy = GenerationStrategy.Random,
                     DataType = DataTypes.None
                 });
             }
@@ -53,7 +52,6 @@ namespace SmartDataGenerator.Generators
             var setting = new Settings()
             {
                 DataType = type,
-                GenerationStrategy = GenerationStrategy.Random
             };
             _settings[propertyName] = setting;
 
