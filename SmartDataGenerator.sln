@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDataGenerator", "SmartDataGenerator\SmartDataGenerator.csproj", "{8B10865B-DAF8-4125-B448-2A65B81B9B3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDataGenerator.Tests", "SmartDataGenerator.Tests\SmartDataGenerator.Tests.csproj", "{192ADDB1-EEE6-48C6-89AC-3774B42AA905}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8B10865B-DAF8-4125-B448-2A65B81B9B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B10865B-DAF8-4125-B448-2A65B81B9B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B10865B-DAF8-4125-B448-2A65B81B9B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192ADDB1-EEE6-48C6-89AC-3774B42AA905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192ADDB1-EEE6-48C6-89AC-3774B42AA905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192ADDB1-EEE6-48C6-89AC-3774B42AA905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192ADDB1-EEE6-48C6-89AC-3774B42AA905}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
