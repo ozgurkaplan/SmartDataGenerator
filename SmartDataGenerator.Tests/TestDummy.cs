@@ -32,11 +32,8 @@ namespace SmartDataGenerator.Tests
         public string Company { get; set; }
         public string Website { get; set; }
         public string Email { get; set; }
-
         public int DefaultNumber { get; set; }
-
         public int Range { get; set; }
-
         public string Sex { get; set; }
     }
 }
