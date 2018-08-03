@@ -8,6 +8,8 @@ SmartDataGenerator lets you generate up to 10,000 items of test data.
 * Company
 * Email
 * Website
+You can also set your own array which then will be used in generation.
+
 ### Sample Usage
 ```
 var generator = new SmartDataGenerator<TestClass>(10000);
