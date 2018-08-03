@@ -1,5 +1,9 @@
 # SmartDataGenerator
 SmartDataGenerator lets you generate up to 10,000 items of test data.
+
+### Installation
+Install-Package SmartDataGenerator 
+
 ### Supported Types
 * FirstName
 * LastName
