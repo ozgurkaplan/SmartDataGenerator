@@ -1,8 +1,0 @@
-﻿<ProjectConfiguration>
-  <Settings>
-    <AdditionalFilesToIncludeForProject>
-      <Value>Data\**.*</Value>
-    </AdditionalFilesToIncludeForProject>
-    <CopyReferencedAssembliesToWorkspace>False</CopyReferencedAssembliesToWorkspace>
-  </Settings>
-</ProjectConfiguration>
