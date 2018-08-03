@@ -7,7 +7,7 @@ namespace SmartDataGenerator.Generators
 {
     internal class FirstNameGenerator : BaseDataGenerator
     {
-        public FirstNameGenerator():base("Data/FirstName.txt")
+        public FirstNameGenerator():base("FirstName")
         {
 
         }

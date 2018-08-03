@@ -7,7 +7,7 @@ namespace SmartDataGenerator.Generators
 {
     internal class EmailGenerator : BaseDataGenerator
     {
-        public EmailGenerator() : base("Data/Email.txt")
+        public EmailGenerator() : base("Email")
         {
 
         }

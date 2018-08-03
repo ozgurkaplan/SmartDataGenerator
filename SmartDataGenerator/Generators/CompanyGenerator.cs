@@ -2,7 +2,7 @@
 {
     internal class CompanyGenerator : BaseDataGenerator
     {
-        public CompanyGenerator() : base("Data/Company.txt")
+        public CompanyGenerator() : base("Company")
         {
         }
     }

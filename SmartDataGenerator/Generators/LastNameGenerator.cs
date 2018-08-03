@@ -7,7 +7,7 @@ namespace SmartDataGenerator.Generators
 {
     internal class LastNameGenerator : BaseDataGenerator
     {
-        public LastNameGenerator() : base("Data/LastName.txt")
+        public LastNameGenerator() : base("LastName")
         {
 
         }

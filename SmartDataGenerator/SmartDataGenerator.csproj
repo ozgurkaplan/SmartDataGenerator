@@ -7,32 +7,10 @@
     <Authors>Ozgur Kaplan</Authors>
     <Copyright>Ozgur Kaplan</Copyright>
     <PackageProjectUrl>https://github.com/ozgurkaplan/SmartDataGenerator</PackageProjectUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Data\FirstName.txt">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Data\LastName.txt">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Data\Country.txt">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Data\Company.txt">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Data\Email.txt">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Data\Website.txt">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <EmbeddedResource Include="Data\*.txt" />
   </ItemGroup>
+
 </Project>

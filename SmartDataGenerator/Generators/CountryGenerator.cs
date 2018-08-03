@@ -7,7 +7,7 @@ namespace SmartDataGenerator.Generators
 {
     internal class CountryGenerator : BaseDataGenerator
     {
-        public CountryGenerator():base("Data/Country.txt")
+        public CountryGenerator():base("Country")
         {
 
         }

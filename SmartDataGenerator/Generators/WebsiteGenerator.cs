@@ -7,7 +7,7 @@ namespace SmartDataGenerator.Generators
 {
     internal class WebsiteGenerator : BaseDataGenerator
     {
-        public WebsiteGenerator() : base("Data/Website.txt")
+        public WebsiteGenerator() : base("Website")
         {
 
         }
