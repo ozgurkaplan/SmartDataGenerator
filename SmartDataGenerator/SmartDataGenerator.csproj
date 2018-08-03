@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>false</SignAssembly>
+    <Description>SmartDataGenerator lets you generate up to 10,000 items of test data.</Description>
+    <Authors>Ozgur Kaplan</Authors>
+    <Copyright>Ozgur Kaplan</Copyright>
+    <PackageProjectUrl>https://github.com/ozgurkaplan/SmartDataGenerator</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Data\FirstName.txt">
