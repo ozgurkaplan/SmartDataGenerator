@@ -18,6 +18,10 @@ namespace SmartDataGenerator.Generators
                     return new CountryGenerator();
                 case DataTypes.Company:
                     return new CompanyGenerator();
+                case DataTypes.Email:
+                    return new EmailGenerator();
+                case DataTypes.Website:
+                    return new WebsiteGenerator();
                 default:
                     throw new ArgumentException();
             }

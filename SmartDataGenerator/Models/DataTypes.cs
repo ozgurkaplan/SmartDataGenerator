@@ -7,6 +7,8 @@
         LastName,
         BirthDate,
         Country,
-        Company
+        Company,
+        Email,
+        Website
     }
 }

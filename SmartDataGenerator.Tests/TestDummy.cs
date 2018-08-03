@@ -1,5 +1,4 @@
 ﻿using System;
-using SmartDataGenerator.Generators;
 using Xunit;
 
 namespace SmartDataGenerator.Tests
@@ -9,7 +8,7 @@ namespace SmartDataGenerator.Tests
         [Fact]
         public void Test()
         {
-            var generator = new SmartDataGenerator<TestClass>(1000);
+            var generator = new SmartDataGenerator<TestClass>(10000);
             generator
                 .Set(f => f.FirstName, DataTypes.FirstName)
                 .Set(f => f.LastName, DataTypes.LastName)
@@ -17,7 +16,9 @@ namespace SmartDataGenerator.Tests
                 .Set(f => f.Country, DataTypes.Country)
                 .Set(f => f.Company, DataTypes.Company)
                 .Set(f => f.Range, new int[] {3, 5, 7})
-                .Set(f => f.Sex, new string[] {"male", "female"});
+                .Set(f => f.Sex, new string[] {"male", "female"})
+                .Set(f => f.Website, DataTypes.Website)
+                .Set(f => f.Email, DataTypes.Email);
             var response = generator.Generate();
         }
     }
@@ -29,6 +30,8 @@ namespace SmartDataGenerator.Tests
         public DateTime BirthDate { get; set; }
         public string Country { get; set; }
         public string Company { get; set; }
+        public string Website { get; set; }
+        public string Email { get; set; }
 
         public int DefaultNumber { get; set; }
 
