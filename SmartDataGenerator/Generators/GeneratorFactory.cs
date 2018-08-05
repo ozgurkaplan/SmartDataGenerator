@@ -9,19 +9,19 @@ namespace SmartDataGenerator.Generators
             switch (type)
             {
                 case DataTypes.FirstName:
-                    return new FirstNameGenerator();
+                    return new FileDataGenerator(type);
                 case DataTypes.LastName:
-                    return new LastNameGenerator();
+                    return new FileDataGenerator(type);
                 case DataTypes.BirthDate:
                     return new BirthDateGenerator();
                 case DataTypes.Country:
-                    return new CountryGenerator();
+                    return new FileDataGenerator(type);
                 case DataTypes.Company:
-                    return new CompanyGenerator();
+                    return new FileDataGenerator(type);
                 case DataTypes.Email:
-                    return new EmailGenerator();
+                    return new FileDataGenerator(type);
                 case DataTypes.Website:
-                    return new WebsiteGenerator();
+                    return new FileDataGenerator(type);
                 default:
                     throw new ArgumentException();
             }

@@ -19,7 +19,11 @@ namespace SmartDataGenerator.Tests
                 .Set(f => f.Sex, new string[] {"male", "female"})
                 .Set(f => f.Website, DataTypes.Website)
                 .Set(f => f.Email, DataTypes.Email);
-            var response = generator.Generate();
+            var responseData = generator.Generate();
+            for (int i = 0; i < 10000; i++)
+            {
+                Assert.True(responseData[i].Country.Length > 0);
+            }
         }
     }
 
