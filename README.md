@@ -11,7 +11,7 @@ Install-Package SmartDataGenerator
 * Country
 * Company
 * Email
-* Website
+* Website   
 You can also set your own array which then will be used in generation.
 
 ### Sample Usage
