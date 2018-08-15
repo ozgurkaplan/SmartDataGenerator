@@ -2,7 +2,7 @@
 
 namespace SmartDataGenerator.Generators
 {
-    public class CustomDataGenerator<T>:IGenerator
+    internal class CustomDataGenerator<T>:IGenerator
     {
         private T[] _data;
         private int _length;

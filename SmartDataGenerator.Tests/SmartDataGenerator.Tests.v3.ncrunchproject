@@ -1,6 +1,7 @@
 ﻿<ProjectConfiguration>
   <Settings>
     <AdditionalFilesToIncludeForProject />
-    <CopyReferencedAssembliesToWorkspace>True</CopyReferencedAssembliesToWorkspace>
+    <CopyReferencedAssembliesToWorkspace>False</CopyReferencedAssembliesToWorkspace>
+    <HiddenComponentWarnings />
   </Settings>
 </ProjectConfiguration>

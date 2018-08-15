@@ -2,7 +2,7 @@
 
 namespace SmartDataGenerator.Generators
 {
-    public class DefaultGenerator:IGenerator
+    internal class DefaultGenerator:IGenerator
     {
         private Type _type;
         public DefaultGenerator(Type type)

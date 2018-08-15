@@ -22,6 +22,10 @@ namespace SmartDataGenerator.Generators
                     return new FileDataGenerator(type);
                 case DataTypes.Website:
                     return new FileDataGenerator(type);
+                case DataTypes.Guid:
+                    return new GuidDataGenerator();
+                case DataTypes.Bool:
+                    return new BoolGenerator();
                 default:
                     throw new ArgumentException();
             }

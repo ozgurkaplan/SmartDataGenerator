@@ -9,6 +9,8 @@
         Country,
         Company,
         Email,
-        Website
+        Website,
+        Guid,
+        Bool
     }
 }
