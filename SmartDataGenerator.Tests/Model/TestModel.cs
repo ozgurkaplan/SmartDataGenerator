@@ -18,5 +18,6 @@ namespace SmartDataGenerator.Tests.Model
         public string Sex { get; set; }
         public Guid UniqueKey { get; set; }
         public bool IsValid { get; set; }
+        public string Text { get; set; }
     }
 }

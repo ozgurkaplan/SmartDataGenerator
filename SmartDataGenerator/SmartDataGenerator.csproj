@@ -6,9 +6,12 @@
     <Authors>Ozgur Kaplan</Authors>
     <Copyright>Ozgur Kaplan</Copyright>
     <PackageProjectUrl>https://github.com/ozgurkaplan/SmartDataGenerator</PackageProjectUrl>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Data\*.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Data\Text.txt" />
   </ItemGroup>
 </Project>

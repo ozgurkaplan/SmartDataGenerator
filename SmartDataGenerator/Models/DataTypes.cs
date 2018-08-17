@@ -11,6 +11,7 @@
         Email,
         Website,
         Guid,
-        Bool
+        Bool,
+        Text
     }
 }

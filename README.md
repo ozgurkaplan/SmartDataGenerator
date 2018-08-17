@@ -11,7 +11,11 @@ Install-Package SmartDataGenerator
 * Country
 * Company
 * Email
-* Website   
+* Website
+* Guid
+* Bool
+* Text
+   
 You can also set your own array which then will be used in generation.
 
 ### Sample Usage
@@ -26,6 +30,9 @@ generator
   .Set(f => f.Range, new int[] {3, 5, 7})
   .Set(f => f.Sex, new string[] {"male", "female"})
   .Set(f => f.Website, DataTypes.Website)
-  .Set(f => f.Email, DataTypes.Email);
+  .Set(f => f.Email, DataTypes.Email)
+  .Set(f => f.UniqueKey, DataTypes.Guid)
+  .Set(f=>f.IsValid,DataTypes.Bool)
+  .Set(f=>f.Text,DataTypes.Text);
 TestClass[] response = generator.Generate();
 ```

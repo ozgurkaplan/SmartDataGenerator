@@ -23,7 +23,8 @@ namespace SmartDataGenerator.Tests
                 .Set(f => f.Website, DataTypes.Website)
                 .Set(f => f.Email, DataTypes.Email)
                 .Set(f => f.UniqueKey, DataTypes.Guid)
-                .Set(f=>f.IsValid,DataTypes.Bool);
+                .Set(f=>f.IsValid,DataTypes.Bool)
+                .Set(f=>f.Text,DataTypes.Text);
             var responseData = generator.Generate();
             for (int i = 0; i < 10000; i++)
             {
@@ -46,7 +47,8 @@ namespace SmartDataGenerator.Tests
                 .Set(f => f.Website, DataTypes.Website)
                 .Set(f => f.Email, DataTypes.Email)
                 .Set(f => f.UniqueKey, DataTypes.Guid)
-                .Set(f => f.IsValid, DataTypes.Bool); 
+                .Set(f => f.IsValid, DataTypes.Bool)
+                .Set(f => f.Text, DataTypes.Text);
             var responseData = generator.Generate();
             for (int i = 0; i < 1000; i++)
             {
